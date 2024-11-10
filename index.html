@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>File Upload and Management</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            background-color: #f4f4f4;
+        }
+        .container {
+            width: 80%;
+            max-width: 800px;
+            background: #fff;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+        .header {
+            text-align: center;
+        }
+        .upload-form {
+            margin-top: 20px;
+            text-align: center;
+        }
+        .upload-button {
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .upload-button:hover {
+            background-color: #0056b3;
+        }
+        .file-list {
+            margin-top: 20px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            padding: 10px;
+            border: 1px solid #ddd;
+        }
+        th {
+            background-color: #f4f4f4;
+        }
+        .thumbnail {
+            width: 50px;
+            height: 50px;
+            object-fit: cover;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>File Upload and Management</h1>
+        </div>
+        <div class="upload-form">
+            <input type="file" id="fileInput">
+            <button class="upload-button" onclick="uploadFile()">Upload</button>
+        </div>
+        <div class="file-list">
+            <h2>Uploaded Files</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Thumbnail</th>
+                        <th>File Name</th>
+                        <th>Date Uploaded</th>
+                    </tr>
+                </thead>
+                <tbody id="fileTableBody">
+                    <!-- Uploaded files will be listed here -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <script>
+        function uploadFile() {
+            alert('File upload functionality is not implemented in this static HTML. Please use a backend service.');
+        }
+        // This is a placeholder function to demonstrate the UI. Real implementation requires backend.
+    </script>
+</body>
+</html>
